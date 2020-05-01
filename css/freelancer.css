@@ -56,7 +56,18 @@ a {
 } */
 
 section {
-  padding: 6rem 0;
+  padding: 6rem 0 3rem 0;
+}
+
+
+section p {
+  padding: 1rem;
+  font-size: 1.3rem !important;
+}
+
+#about p {
+  padding: 1rem;
+  font-size: 1.1rem !important;
 }
 
 section h2 {
@@ -408,7 +419,7 @@ b {
 } */
 #contato img {
   height: 2.2rem;
-  margin: 0 .5rem 0 .5rem;
+  margin: 0.5rem;
 }
 
 .caption {
@@ -448,13 +459,13 @@ b {
 .bgimg:nth-child(4) {
   background-image: url("../img/s1.jpg");
   min-height: 60vh;
-  box-shadow: inset 0 0 40px 0px #000;
+  /* box-shadow: inset 0 0 40px 0px #000; */
   /* opacity: 70%; */
 }
 
 .bgimg:nth-child(5) {
   background-image: url("../img/s2.jpg");
-  box-shadow: inset 0 0 40px 0px #000;
+  /* box-shadow: inset 0 0 40px 0px #000; */
   min-height: 60vh;
 }
 
@@ -463,23 +474,12 @@ b {
   min-height: 60vh;
 }
 
-.bgimg:nth-child(7) {
-  background-image: url("../img/3.jpg");
-  min-height: 60vh;
-}
-
 .img-t {
-  padding: 1rem;
+  padding: 1.5rem;
   margin: auto;
   width: 100%;
-  max-width: 250px;
+  max-width: 200px;
   display: block;
-}
-
-section p {
-  padding: 1rem;
-  font-size: 1.3rem !important;
-
 }
 
 
@@ -525,4 +525,8 @@ section p {
   /* padding-left: 0; */
   font-weight: 500;
   margin-bottom: 0rem;
+}
+
+.plist > div{
+  margin-bottom: 2rem;
 }
