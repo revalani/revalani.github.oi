@@ -31,7 +31,26 @@
   <link href="css/freelancer.css" rel="stylesheet">
   <!-- <link href="icon/style.css" rel="stylesheet"> -->
 
+  <!-- <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var lazyBackgrounds = [].slice.call(document.querySelectorAll(".lazy"));
 
+      if ("IntersectionObserver" in window) {
+        let lazyBackgroundObserver = new IntersectionObserver(function (entries, observer) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              lazyBackgroundObserver.unobserve(entry.target);
+            }
+          });
+        });
+
+        lazyBackgrounds.forEach(function (lazyBackground) {
+          lazyBackgroundObserver.observe(lazyBackground);
+        });
+      }
+    });
+  </script> -->
 </head>
 
 <body id="page-top">
@@ -76,7 +95,7 @@
         <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner mh-100">
-        <div class="carousel-item bgimg aa active">
+        <div class="carousel-item lazy bgimg-1 active">
           <div class="carousel-caption d-none d-block ">
             <div class="container">
               <div class=" text-left text-third">
@@ -86,7 +105,7 @@
             </div>
           </div>
         </div>
-        <div class="carousel-item  bgimg">
+        <div class="carousel-item  bgimg-2">
           <div class="carousel-caption d-none d-block ">
             <div class="container">
               <div class=" text-center text-third">
@@ -96,7 +115,7 @@
             </div>
           </div>
         </div>
-        <div class="carousel-item  bgimg">
+        <div class="carousel-item  bgimg-3">
           <div class="carousel-caption d-none d-block ">
             <div class="container">
               <div class=" text-right text-third">
@@ -138,7 +157,7 @@
   </section>
 
   <!-- Portfolio  Section -->
-  <div class="bgimg">
+  <div class="bgimg-4">
     <div class="caption ">
       <h1 class="text-center text-uppercase text-primary text-justify mb-5" id="area">Atividades</h1>
     </div>
@@ -159,7 +178,7 @@
         <div class="row plist">
           <div class="col-md-4 ">
             <div class=" list">
-              <img src="/icon/sensoriamento.svg" class="img-t" alt="">
+              <img as src="./icon/sensoriamento.svg" class="img-t" alt="">
               <div class="">
                 <p>Sensoriamento</p>
                 <li>Medição de fatores agrícolas e variaveis</li>
@@ -174,7 +193,7 @@
           </div>
           <div class="col-md-4 ">
             <div class=" list">
-              <img src="/icon/consult.svg" class="img-t " alt="">
+              <img src="./icon/consult.svg" class="img-t " alt="">
               <div class="">
                 <p>Consultoria</p>
                 <li>Viabilidade Econômica</li>
@@ -188,7 +207,7 @@
           </div>
           <div class="col-md-4  ">
             <div class="list">
-              <img src="/icon/anal.svg" class="img-t" alt="">
+              <img src="./icon/anal.svg" class="img-t" alt="">
               <div class="">
                 <p>Análise de dados</p>
                 <li>Relatórios de controle de produção</li>
@@ -209,7 +228,7 @@
   </section>
 
   <!-- Footer -->
-  <div class="bgimg">
+  <div class="bgimg-5">
     <div class="caption" id="contato">
       <h1 class="text-center text-uppercase text-primary text-justify mb-5">Contatos</h1>
     </div>
@@ -255,22 +274,22 @@
                 <p class="lead">
                   <a target="_blank"
                     href="https://api.whatsapp.com/send?phone=5521&text=Ol%C3%A1%2c%20vim%20atrav%C3%A9s%20do%20site.%20Estou%20interessado%20em%20seus%20servi%C3%A7os.&source=&data=">
-                    <img src="/icon/whatsapp.svg" alt="">
+                    <img async src="./icon/whatsapp.svg" alt="">
                   </a>
                   <a href="http://" target="_blank" rel="noopener noreferrer">
-                    <img src="/icon/instagram.svg" alt="">
+                    <img async src="./icon/instagram.svg" alt="">
                   </a>
                   <a target="_blank" href="https://www.fb.com/Druidatech">
-                    <img src="/icon/facebook.svg" alt="">
+                    <img async src="./icon/facebook.svg" alt="">
                   </a>
                   <a href="http://twitter.com/druidatech" target="_blank" rel="noopener noreferrer">
-                    <img src="/icon/twitter.svg" alt="">
+                    <img async src="./icon/twitter.svg" alt="">
                   </a>
                   <a href="http://" target="_blank" rel="noopener noreferrer">
-                    <img src="/icon/linkedin.svg" alt="">
+                    <img async src="./icon/linkedin.svg" alt="">
                   </a>
                   <a href="http://" target="_blank" rel="noopener noreferrer">
-                    <img src="/icon/youtube.svg" alt="">
+                    <img async src="./icon/youtube.svg" alt="">
                   </a>
                 </p>
               </div>
@@ -299,7 +318,7 @@
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"

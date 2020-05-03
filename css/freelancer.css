@@ -430,7 +430,11 @@ b {
   text-align: center;
 }
 
-.bgimg {
+.bgimg-1,
+.bgimg-2,
+.bgimg-3,
+.bgimg-4,
+.bgimg-5 {
   position: relative;
   background-attachment: fixed;
   background-position: center;
@@ -441,36 +445,37 @@ b {
 }
 
 
-.bgimg:nth-child(1) {
+/* .bgimg-1 {
+  background-image: url("../img/xi1.jpg");
+  min-height: 100vh;
+}
+.bgimg-1.visible { */
+
+  .bgimg-1 {
   background-image: url("../img/i1.jpg");
   min-height: 100vh;
 }
 
-.bgimg:nth-child(2) {
+.bgimg-2 {
   background-image: url("../img/i2.jpg");
   min-height: 100vh;
 }
 
-.bgimg:nth-child(3) {
+.bgimg-3 {
   background-image: url("../img/i3.jpg");
   min-height: 100vh;
 }
 
-.bgimg:nth-child(4) {
+.bgimg-4 {
   background-image: url("../img/s1.jpg");
   min-height: 60vh;
   /* box-shadow: inset 0 0 40px 0px #000; */
   /* opacity: 70%; */
 }
 
-.bgimg:nth-child(5) {
+.bgimg-5 {
   background-image: url("../img/s2.jpg");
   /* box-shadow: inset 0 0 40px 0px #000; */
-  min-height: 60vh;
-}
-
-.bgimg:nth-child(6) {
-  background-image: url("../img/s2.jpg");
   min-height: 60vh;
 }
 
@@ -527,6 +532,16 @@ b {
   margin-bottom: 0rem;
 }
 
-.plist > div{
+.plist>div {
   margin-bottom: 2rem;
+}
+
+@media (max-width: 720px) {
+  ol {
+    margin-bottom: 2rem !important;
+  }
+
+  .carousel-caption {
+    padding-bottom: 2rem !important;
+  }
 }
