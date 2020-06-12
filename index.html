@@ -7,14 +7,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
 
-  <meta name="robots" content="noindex,nofollow">
-  <meta name="googlebot" content="noindex">
+  <meta name="robots" content="index,follow">
+  <meta name="googlebot" content="index">
 
   <!-- SEO tags and descriptions -->
-  <title property="og:title" content="Druida Consultoria">
-    Druida Consultoria
+  <title property="og:title" content="Druida Tecnologia">
+    Druida Tecnologia
   </title>
-  <meta name="description" property="og:description" content="Consultoria agrícola e tecnologia">
+  <meta name="description" property="og:description" content="Consultoria agrícola e tecnologica">
   <meta name="keywords" content="">
 
   <link rel="canonical" href="https://druidatech.com.br" />
@@ -28,14 +28,35 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="css/freelancer.css" rel="stylesheet">
 
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var lazyBackgrounds = [].slice.call(document.querySelectorAll(".lazy"));
+
+      if ("IntersectionObserver" in window && "IntersectionObserverEntry" in window && "intersectionRatio" in window
+        .IntersectionObserverEntry.prototype) {
+        let lazyBackgroundObserver = new IntersectionObserver(function (entries, observer) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("v");
+              lazyBackgroundObserver.unobserve(entry.target);
+            }
+          });
+        });
+
+        lazyBackgrounds.forEach(function (lazyBackground) {
+          lazyBackgroundObserver.observe(lazyBackground);
+        });
+      }
+    });
+  </script>
 </head>
 
-<body id="page-top">
+<body id="inicio">
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg fixed-top text-uppercase" id="mainNav">
     <div class="container">
-      <a class=" js-scroll-trigger" href="#page-top">
-        <img class="navbar-brand " src="img/druida_logo.svg" alt="logo Druida consultoria">
+      <a class=" js-scroll-trigger" href="#inicio">
+        <img class="navbar-brand " src="img/druida_logo.svg" alt="logo Druida Tecnologia">
       </a>
 
       <button class="navbar-toggler navbar-toggler-right  rounded" type="button" data-toggle="collapse"
@@ -73,8 +94,8 @@
       </ol>
       <div class="carousel-inner mh-100">
         <div class="carousel-item lazy bgimg-1 active"></div>
-        <div class="carousel-item  bgimg-2"></div>
-        <div class="carousel-item  bgimg-3"></div>
+        <div class="carousel-item lazy bgimg-2"></div>
+        <div class="carousel-item lazy bgimg-3"></div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -94,7 +115,7 @@
       <h2 class="text-center text-uppercase mb-3">Nossa Missão</h2>
       <div class="row  justify-content-center">
         <div class="col-lg-10 text-justify ">
-          <p class="lead">Levamos soluções e tecnologia da agricultura 4.0 para o produtor agrícola, tornando sua
+          <p class="lead">Levamos soluções e tecnologias da agricultura 4.0 para o produtor agrícola, tornando sua
             produção mais eficiente, sustentável e alinhada com as tecnologias atuais.</p>
         </div>
       </div>
@@ -103,7 +124,6 @@
       <div class="row  justify-content-center">
         <div class="col-lg-10 text-justify ">
           <p class="lead">Somos uma equipe apaixonada por tecnologia e pelos desafios de produção agrícola.
-            <br>
             Acreditamos na importância de produzir alimentos saudáveis e com qualidade ao consumidor. A partir
             de uma produção sustentável, otimizada e eficiente através de técnicas e soluções baseadas em agricultura
             4.0 e sustentabilidade.
@@ -116,7 +136,7 @@
   </section>
 
   <!-- Portfolio  Section -->
-  <div class="bgimg-5">
+  <div class="lazy bgimg-5">
     <div class="caption ">
       <h1 class="text-center text-uppercase text-primary text-justify mb-5" id="area">Áreas de Atuação</h1>
     </div>
@@ -179,7 +199,7 @@
   </section>
 
   <!-- Footer -->
-  <div class="bgimg-6">
+  <div class="lazy bgimg-6">
     <div class="caption" id="contato">
       <h1 class="text-center text-uppercase text-primary text-justify mb-5">Contatos</h1>
     </div>
