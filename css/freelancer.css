@@ -321,6 +321,9 @@ a:active {
 
 .text-primary {
   color: var(--cor_texto_2) !important;
+  background: linear-gradient(to right,rgba(0,0,0,0),rgba(0,0,0,.4),rgba(0,0,0,.4),rgba(0,0,0,0));
+  padding: 10px;
+
 }
 
 .text-secondary {
@@ -425,7 +428,7 @@ b {
 .caption {
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 40%;
   width: 100%;
   text-align: center;
 }
