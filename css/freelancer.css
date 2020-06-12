@@ -182,8 +182,8 @@ section h2 {
 }
 
 #mainNav .navbar-brand {
-  height: 2.5rem;
-  padding: 0.5rem;
+  height: 3rem;
+  padding: 0.6rem;
   padding-left: 1rem;
 }
 
@@ -434,7 +434,8 @@ b {
 .bgimg-2,
 .bgimg-3,
 .bgimg-4,
-.bgimg-5 {
+.bgimg-5,
+.bgimg-6 {
   position: relative;
   background-attachment: fixed;
   background-position: center;
@@ -443,13 +444,6 @@ b {
   filter: saturate(120%);
   /* opacity: 0.6; */
 }
-
-
-/* .bgimg-1 {
-  background-image: url("../img/xi1.jpg");
-  min-height: 100vh;
-}
-.bgimg-1.visible { */
 
 .bgimg-1 {
   background-image: url("../img/c1.jpg");
@@ -471,14 +465,14 @@ b {
   min-height: 95vh;
 }
 
-.bgimg-4 {
+.bgimg-5 {
   background-image: url("../img/a1.jpg");
-  min-height: 95vh;
+  min-height: 60vh;
 }
 
-.bgimg-5 {
+.bgimg-6 {
   background-image: url("../img/co1.jpg");
-  min-height: 50vh;
+  min-height: 60vh;
 }
 
 .img-t {
