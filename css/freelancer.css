@@ -182,8 +182,8 @@ section h2 {
 }
 
 #mainNav .navbar-brand {
-  height: 3rem;
-  padding: 0.6rem;
+  height: 3.5rem;
+  padding: 0.7rem;
   padding-left: 1rem;
 }
 
@@ -263,7 +263,7 @@ section h2 {
   } */
 
   #mainNav.navbar-shrink .navbar-brand {
-    height: 4rem;
+    height: 4.5rem;
   }
 }
 
@@ -447,32 +447,35 @@ b {
 
 .bgimg-1 {
   background-image: url("../img/c1.jpg");
-  min-height: 95vh;
+  min-height: 90vh;
 }
 
 .bgimg-2 {
   background-image: url("../img/c2.jpg");
-  min-height: 95vh;
+  min-height: 90vh;
 }
 
 .bgimg-3 {
   background-image: url("../img/c3.jpg");
-  min-height: 95vh;
+  min-height: 90vh;
 }
 
 .bgimg-4 {
   background-image: url("../img/c4.png");
-  min-height: 95vh;
+  min-height: 90vh;
 }
 
 .bgimg-5 {
   background-image: url("../img/a1.jpg");
   min-height: 60vh;
+  opacity: 0.8;
 }
 
 .bgimg-6 {
+  /* background-color: rgba(240, 255, 240, 0.6); */
   background-image: url("../img/co1.jpg");
   min-height: 60vh;
+  opacity: 0.8;
 }
 
 .img-t {
