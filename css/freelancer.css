@@ -289,52 +289,52 @@ section.portfolio h5 {
 }
 
 .bgimg-2 {
-  background-image: url("../img/c2l.jpg");
+  background-image: url("../img/c2l.webp");
   min-height: 92vh;
 }
 
 .bgimg-3 {
-  background-image: url("../img/c3l.jpg");
+  background-image: url("../img/c3l.webp");
   min-height: 92vh;
 }
 
 .bgimg-5 {
-  background-image: url("../img/a1l.jpg");
+  background-image: url("../img/a1l.webp");
   min-height: 60vh;
   opacity: 0.8;
 }
 
 .bgimg-6 {
   /* background-color: rgba(240, 255, 240, 0.6); */
-  background-image: url("../img/co1l.jpg");
+  background-image: url("../img/co1l.webp");
   min-height: 60vh;
   opacity: 0.8;
 }
 
 .bgimg-1.v {
-  background-image: url("../img/c1.jpg");
+  background-image: url("../img/c1.webp");
   min-height: 92vh;
 }
 
 .bgimg-2.v {
-  background-image: url("../img/c2.jpg");
+  background-image: url("../img/c2.webp");
   min-height: 92vh;
 }
 
 .bgimg-3.v {
-  background-image: url("../img/c3.jpg");
+  background-image: url("../img/c3.webp");
   min-height: 92vh;
 }
 
 .bgimg-5.v {
-  background-image: url("../img/a1.jpg");
+  background-image: url("../img/a1.webp");
   min-height: 60vh;
   opacity: 0.8;
 }
 
 .bgimg-6.v {
   /* background-color: rgba(240, 255, 240, 0.6); */
-  background-image: url("../img/co1.jpg");
+  background-image: url("../img/co1.webp");
   min-height: 60vh;
   opacity: 0.8;
 }
