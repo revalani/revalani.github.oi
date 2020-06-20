@@ -1,6 +1,5 @@
-
 (function ($) {
-  
+
 
   "use strict"; // Start of use strict
 
@@ -34,4 +33,5 @@
   navbarCollapse();
   $(window).scroll(navbarCollapse);
 
+  $('.lazy').addClass('v'); //carrega as fotos apos todo o documento
 })(jQuery); // End of use strict
